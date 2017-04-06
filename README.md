@@ -4,7 +4,7 @@ These repository is backup repo for installing my customized vim setting.
 
 Some plugin folder is not uploaded with push command.
 
-I think the reason is that the github doesn't support for large-size file, so we should install plugin like autocompleteme, taglist and so on.
+I think the reason is that the github doesn't support for large-size file, so we should install plugin like autocompleteme, taglist and so on using vundle.
 
 
 ### Reference.
