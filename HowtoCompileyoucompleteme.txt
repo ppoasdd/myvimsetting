@@ -1,0 +1,40 @@
+To use YouCompleteMe, we should compile install.py 
+
+To do that, follow the guild in 
+
+http://neverapple88.tistory.com/26
+
+sudo apt-get install vim-nox
+sudo apt-get install build-essential cmake
+sudo apt-get install python-dev python3-dev
+sudo apt-get install clang
+sudo apt-get install mono-devel
+
+and move successfully the bundle folder which have the YouCompleteMe folder.
+
+
+
+
+
+
+If we meet the following error,
+
+CSC: error CS0518: The predefined type `System.Void' is not defined or importced
+CSC: error CS0518: The predefined type `System.Array' is not defined or imported
+CSC: error CS0518: The predefined type `System.Type' is not defined or imported
+CSC: error CS0518: The predefined type `System.Collections.IEnumerator' is not defined or imported
+
+This is caused by compileing without standard libraries. So we should change default configuration.
+
+To do that,
+
+At first install xbuild.
+
+In terminal, export NoCompilerStandardLib=false  
+
+then complie. (./install.py --all)
+
+
+
+
+

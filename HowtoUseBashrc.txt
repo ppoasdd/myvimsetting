@@ -1,0 +1,8 @@
+Append commands what we want to execute automatically when we start the terminal. 
+
+#export PATH="/home/sdyang/anaconda3/bin:$PATH"
+
+xmodmap ~/.Xmodmap
+
+# added by Anaconda2 4.1.1 installer
+#export PATH="/home/sdyang/anaconda2/bin:$PATH"

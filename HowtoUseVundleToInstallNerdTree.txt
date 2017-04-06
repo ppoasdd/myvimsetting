@@ -1,0 +1,7 @@
+at first paste the customized .vimrc file
+
+1. on vim, :PluginSearch 'name of plugin' (ex. nerdtree)
+(In default, i have searched and wrote it in .vimrc)
+2. paste the full name of plugin in .vimrc file
+3. close .vimrc file and open vim and type :PluginInstall 
+then vim install all plugin in .vimrc

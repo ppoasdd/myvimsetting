@@ -1,0 +1,2 @@
+1. locate .Xmodmap file into homedirectory(~)
+2. in terminal execute "xmodmap ~/.Xmodmap"

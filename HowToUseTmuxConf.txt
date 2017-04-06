@@ -1,0 +1,1 @@
+locate .tmux.conf file in /~

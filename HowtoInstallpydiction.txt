@@ -1,0 +1,5 @@
+refer the readme file in pydiction.zip
+
+To use Omni complete, we should install AutoCompleteme
+
+refer the VIM hand-written note.

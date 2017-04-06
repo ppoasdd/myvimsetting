@@ -1,0 +1,20 @@
+#How to solarize vim
+
+1. change the terminal color scheme as solarized:
+
+- move the .Xresources file to home directory
+- xrdb -merge ~/.Xresources
+
+2. install solarized vim colorscheme:
+
+- move the solarized.vim file to .vim/colors/
+
+3. edit .vimrc file
+
+- append the following commands :
+
+syntax on
+let g:solarized_termcolors=256
+set t_Co=256 
+set background=light
+colorscheme solarized

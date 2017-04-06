@@ -1,0 +1,3 @@
+the path of darkblue.vim file in ubuntu
+
+/usr/share/vim/vimNN/colors
