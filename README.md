@@ -12,10 +12,7 @@ I think the reason is that the github doesn't support for large-size file, so we
 
 1.0 install python-pip on jupyterhub
 
-'''
-sudo apt-get install python-pip
-
-'''
+    sudo apt-get install python-pip
 
 1.1 execute bash script 'installansible'
 
