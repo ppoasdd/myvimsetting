@@ -24,11 +24,11 @@ To install with ansible, we should modify vim.yml file.
     cd path/to/ansible/folder/
 
 
-change the following line.
+change the following line of vim.yml file
 
----
-vim.yml file
----
+    vim.yml file
+
+    path : path/to/ansible/folder/
 
     - name: fetch vim conf files. 
       synchronize: mode=push src=~/path/to/deploy/ dest=~/
