@@ -1,0 +1,62 @@
+#this command operates well
+ansible adh -s -m apt -a "name=tmux" 
+
+ansible proto -a "/bin/rm ~/Desktop/test.py"
+
+ansible proto -m apt -a "name=tmux" --become -K
+
+ansible proto -m apt -a "name=vim" --become -K
+
+ansible proto -m apt -a "name=tmux state=absent" --become -K
+
+ansible proto -m apt -a "name=vim state=absent" --become -K
+
+ansible proto -m shell -a "/sbin/shutdown" --become -K
+
+
+
+
+
+ansible all -m synchronize -a "src=./deploy/ dest=~/Desktop/confFiles/deploy/ mode=push"
+
+ansible adh -m command -a "/bin/mv -r ~/Desktop/confFiles/deploy/* ~/" 
+
+ansible adh -m copy -a "src=~/Desktop/confFiles/deploy/ dest=~/" 
+
+ansible adh -m synchronize -a "mode=push src=~/Desktop/confFiles/deploy/ dest=~/Desktop/confFiles/deploy/deploy/" 
+
+
+
+ansible adh -m synchronize -a "mode=push src=~/Desktop/confFiles/deploy/ dest=~/"
+
+
+- command: /usr/bin/make_database.sh arg1 arg2
+  args:
+      chdir: somedir/
+          creates: /path/to/database
+
+
+##
+ansible_become_pass
+
+ansible ply -m shell -a "apt-get install tmux" -b
+
+ansible proto -m shell -a "apt-get install tmux" -b -K
+
+
+
+#with password
+ansible proto -m shell -a "apt-get install vim" -b -K
+
+
+#without password(passwordless)
+ansible proto -m shell -a "apt-get install vim" -b
+
+
+ansible proto -m shell -a "apt-get remove vim" -b -K
+
+ansible proto -m apt -a "name=vim state=absent" -b -K
+
+
+Data from such a repository can't be authenticated and is therefore potentially dangerous to use.
+

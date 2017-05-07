@@ -1,0 +1,64 @@
+---
+- hosts: proto 
+  remote_user: sdyang 
+  tasks:
+    - name: apt-get update 
+      apt: update_cache=yes
+      become: yes
+      become_method: sudo
+          
+    - name: install vim via apt-get
+      apt: name=vim
+      become: yes
+      become_method: sudo
+
+
+    - name: install tmux via apt-get
+      apt: name=tmux
+      become: yes
+      become_method: sudo
+
+    - name: fetch vim conf files. 
+      synchronize: mode=push src=~/Desktop/confFiles/deploy/ dest=~/
+
+    - name: install build-essential via apt-get
+      apt: name=build-essential
+      become: yes
+      become_method: sudo
+          
+    - name: install cmake via apt-get
+      apt: name=cmake
+      become: yes
+      become_method: sudo
+          
+    - name: install python-dev via apt-get
+      apt: name=python-dev
+      become: yes
+      become_method: sudo
+          
+    - name: install python3-dev via apt-get
+      apt: name=python3-dev
+      become: yes
+      become_method: sudo
+
+    - name: install clang via apt-get
+      apt: name=clang
+      become: yes
+      become_method: sudo
+
+    - name: install mono-devel via apt-get
+      apt: name=mono-devel
+      become: yes
+      become_method: sudo
+      
+    - name: install mono-xbuild via apt-get
+      apt: name=mono-xbuild
+      become: yes
+      become_method: sudo
+
+    - name: install YouCompleteMe 
+      shell: ./install.py --all
+      args: 
+          chdir: ~/.vim/bundle/YouCompleteMe/
+          
+
